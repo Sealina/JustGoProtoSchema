@@ -31,6 +31,10 @@ message Package {
 	string bookingURL = 10;
 	// time that this package is got from expedia server
 	uint64 queryTime = 11; // in system time millis
+	// flight individual price
+	float flightPricePerPerson = 12
+	// hotel per room price
+	float hotelPricePerRoom = 13
 }
 
 message hotel {
