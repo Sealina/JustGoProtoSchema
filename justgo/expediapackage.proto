@@ -4,7 +4,7 @@ syntax = "proto3";
 
 package expediapackage;
 
-option java_package = "com.expedia.www.packagefinder.exppackage";
+option java_package = "com.expedia.www.justgo.exppackage";
 option java_outer_classname = "ExpPackageProtos";
 
 message PackageList {
@@ -32,9 +32,9 @@ message Package {
 	// time that this package is got from expedia server
 	uint64 queryTime = 11; // in system time millis
 	// flight individual price
-	float flightPricePerPerson = 12
+	float flightPricePerPerson = 12;
 	// hotel per room price
-	float hotelPricePerRoom = 13
+	float hotelPricePerRoom = 13;
 }
 
 message hotel {
