@@ -12,29 +12,32 @@ message PackageList {
 }
 
 message Package {
+	// ids
+	string packageId = 1;
+	string hotelIdShort = 2;
+	string hotelIdLong = 3;
+	string flightId = 4;
 	// where
-	string cityName = 1;
-	string countryName = 2;
+	string cityName = 5;
+	string countryName = 6;
 	// when
-	string fromDate = 3;	// in the format of YYYY-MM-DD
-	string toDate = 4;	// same format
+	string fromDate = 7;	// in the format of YYYY-MM-DD
+	string toDate = 8;	// same format
 	// how much
-	float pricePerPerson = 5;
+	float pricePerPerson = 9;
+	float flightPricePerPerson = 10;
+	float hotelPricePerRoom = 11;
 	// hotel details
-	hotel hotelDetails = 6;
+	hotel hotelDetails = 12;
 	// flight details
-	flight flightDetails = 7;
+	flight flightDetails = 13;
 	// images
 	// packageImageURL: "http://media.expedia.com/mobiata/mobile/apps/ExpediaBooking/FlightDestinations/images/[AirportCode].jpg?output-quality=60&output-format=jpeg&downsize=2208px%3A%2A"
-	string packageImageURL = 8;
-	repeated string cityImageURLs = 9; // not set now, might be hand picked in the future
-	string bookingURL = 10;
+	string packageImageURL = 14;
+	repeated string cityImageURLs = 15; // not set now, might be hand picked in the future
+	string bookingURL = 16;
 	// time that this package is got from expedia server
-	uint64 queryTime = 11; // in system time millis
-	// flight individual price
-	float flightPricePerPerson = 12;
-	// hotel per room price
-	float hotelPricePerRoom = 13;
+	uint64 queryTime = 17; // in system time millis
 }
 
 message hotel {
