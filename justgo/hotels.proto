@@ -15,4 +15,11 @@ message Hotel {
 	string hotelId = 1;
 	float hotelScore = 2;
 	int32 hotelRank = 3;
+	string hotelRegionId = 4;
+	string TwoDayTripStartDate = 5; //in "YYYY-MM-dd" format
+	string TwoDayTripEndDate = 6;
+	string FiveDayTripStartDate = 7;
+	string FiveDayTripEndDate = 8;
+	string SevenDayTripStartDate = 9;
+	string SevenDayTripEndDate = 10;
 }
