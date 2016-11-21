@@ -75,6 +75,8 @@ message hotel {
 	string neighborhood = 28; // e.g. Swaggerui: packageAPI/packageResult/hotels/[0]/neighborhood
 	string featuredReview = 29; // e.g. HotelAPI: reviewSummary/featuredReview
 	string hotelDescription = 30; // e.g. HotelAPI: overview/shortDescription
+	string firstTag = 31;
+	string secondTag = 32;
 }
 
 message flight {
