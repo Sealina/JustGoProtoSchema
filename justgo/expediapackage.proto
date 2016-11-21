@@ -38,6 +38,8 @@ message Package {
 	string bookingURL = 16;
 	// time that this package is got from expedia server
 	uint64 queryTime = 17; // in system time millis
+	string firstTag = 18;
+	string secondTag = 19;
 }
 
 message hotel {
@@ -75,8 +77,6 @@ message hotel {
 	string neighborhood = 28; // e.g. Swaggerui: packageAPI/packageResult/hotels/[0]/neighborhood
 	string featuredReview = 29; // e.g. HotelAPI: reviewSummary/featuredReview
 	string hotelDescription = 30; // e.g. HotelAPI: overview/shortDescription
-	string firstTag = 31;
-	string secondTag = 32;
 }
 
 message flight {
